@@ -354,6 +354,8 @@ ioctl_decode(struct tcb *tcp)
 		return hdio_ioctl(tcp, code, arg);
 	case 0x12:
 		return block_ioctl(tcp, code, arg);
+	case 0x07:
+		return i2c_ioctl(tcp, code, arg);
 	case '!': /* 0x21 */
 		return seccomp_ioctl(tcp, code, arg);
 	case '"': /* 0x22 */

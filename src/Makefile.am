@@ -148,6 +148,7 @@ libstrace_a_SOURCES =	\
 	hostname.c	\
 	inotify.c	\
 	inotify_ioctl.c	\
+	i2c_ioctl.c \
 	io.c		\
 	io_uring.c	\
 	ioctl.c		\

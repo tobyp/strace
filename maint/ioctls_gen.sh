@@ -53,6 +53,7 @@ trap 'cleanup 1' HUP PIPE INT QUIT TERM
 # Fetch ioctl commands defined in hex form.
 {
 	"$mydir"/ioctls_hex.sh "$inc_dir" 03 linux/hdreg.h
+	"$mydir"/ioctls_hex.sh "$inc_dir" 07 linux/i2c-dev.h
 	"$mydir"/ioctls_hex.sh "$inc_dir" 22 scsi/sg.h
 	"$mydir"/ioctls_hex.sh "$inc_dir" 46 linux/fb.h
 	"$mydir"/ioctls_hex.sh "$inc_dir" 4B linux/kd.h
